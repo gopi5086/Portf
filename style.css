@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -31,22 +32,22 @@ nav,
 }
 
 nav {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 17vh;
+  padding: 0 2rem;
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 a {
   color: black;
   text-decoration: none;
-  text-decoration-color: white;
 }
 
 a:hover {
@@ -58,8 +59,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
-  opacity: .85;
-  margin-right: 50px;
+  opacity: 0.85;
 }
 
 .logo:hover {
@@ -69,7 +69,6 @@ a:hover {
 /* SECTIONS */
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -123,7 +122,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
-  opacity: .92;
+  opacity: 0.92;
 }
 
 #socials-container {
@@ -289,7 +288,7 @@ article p {
 .project-title {
   margin: 1rem;
   color: black;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .project-btn {
@@ -366,6 +365,7 @@ footer p {
   color: aliceblue;
 }
 
+/* Media Queries for Responsiveness */
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -507,6 +507,7 @@ footer p {
   }
 }
 
+/* Hamburger Menu Styles */
 .menu-links {
   display: none; /* Hide by default */
   flex-direction: column; /* Make it stack vertically */
@@ -535,4 +536,4 @@ footer p {
   width: 25px;
   background-color: black;
   transition: all 0.3s ease-in-out;
-    }
+}
