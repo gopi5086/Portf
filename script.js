@@ -1,15 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const hamburgerIcon = document.querySelector(".hamburger-icon");
-  const menuLinks = document.querySelector(".menu-links");
-
-  hamburgerIcon.addEventListener("click", () => {
-    menuLinks.classList.toggle("show");
-  });
-
-  // Optional: Close menu when clicking on a menu link
-  document.querySelectorAll(".menu-links li a").forEach((link) => {
-    link.addEventListener("click", () => {
-      menuLinks.classList.remove("show");
-    });
-  });
-});
+function toggleMenu(){
+    const menu = document.querySelector(".hamburger-links");
+    const close_icon = document.querySelector(".close");
+    const burger_icon=document.querySelector(".burger");
+    burger_icon.classList.toggle("close2");
+    close_icon.classList.toggle("disappear");
+    menu.classList.toggle("open");
+}
